@@ -108,13 +108,13 @@ pipeline {
         }
 
 
-     //   always {
-//
-  //          sh '''
-    //        docker rm -f python-container || true
-      //      '''
+        always {
 
-        //}
+            sh '''
+            docker rm -f python-container || true
+            '''
+
+        }
 
     }
 
