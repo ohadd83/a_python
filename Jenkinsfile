@@ -111,8 +111,7 @@ pipeline {
         always {
 
             sh '''
-            echo "great job 1"
-#            docker rm -f python-container || true
+            docker rm -f python-container || true
             '''
 
         }
